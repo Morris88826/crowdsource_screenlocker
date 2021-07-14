@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
         let _y = min(850, 850+translation.y)
         
-        if _y < 600{
+        if _y < 500{
             print("change")
         }
         bar.center = CGPoint(x: view.center.x, y: _y)
