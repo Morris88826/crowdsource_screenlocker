@@ -6,11 +6,14 @@
 //
 
 import UIKit
+ 
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    
+    var start = false
 
 
     override func viewDidLoad() {
@@ -37,12 +40,30 @@ class ViewController: UIViewController {
         let bar = sender.view!
         let translation = sender.translation(in: view)
         
-        let _y = min(850, 850+translation.y)
+        let y_base = CGFloat(850)
+        let _y = min(y_base, y_base+translation.y)
         
-        if _y < 500{
-            print("change")
+        if (_y < 600) && (!self.start){
+            
+            let crowdsource_entry = storyboard?.instantiateViewController(identifier: "crowdsource_vc") as! CrowdsourceViewController
+            
+            crowdsource_entry.modalPresentationStyle = .fullScreen
+            crowdsource_entry.start = { [weak self] status in DispatchQueue.main.async {
+                self?.start = status!
+            }
+            }
+            
+            present(crowdsource_entry, animated: true)
+            self.start = true
+            
         }
-        bar.center = CGPoint(x: view.center.x, y: _y)
+        
+        if (!self.start) {
+            bar.center = CGPoint(x: view.center.x, y: _y)
+        }
+        else{
+            bar.center = CGPoint(x: view.center.x, y: y_base)
+        }
         
         if sender.state == .ended{
             UIView.animate(withDuration: 0.2, animations: {
