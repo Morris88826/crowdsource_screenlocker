@@ -44,18 +44,7 @@ class ViewController: UIViewController {
         let _y = min(y_base, y_base+translation.y)
         
         if (_y < 600) && (!self.start){
-            
-            let crowdsource_entry = storyboard?.instantiateViewController(identifier: "crowdsource_vc") as! CrowdsourceViewController
-            
-            crowdsource_entry.modalPresentationStyle = .fullScreen
-            crowdsource_entry.start = { [weak self] status in DispatchQueue.main.async {
-                self?.start = status!
-            }
-            }
-            
-            present(crowdsource_entry, animated: true)
-            self.start = true
-            
+            self.load_next_page()
         }
         
         if (!self.start) {
@@ -72,6 +61,30 @@ class ViewController: UIViewController {
         }
     }
     
+    private func load_next_page(){
+        
+        let type = Int.random(in: 0...2)
+        
+        if type == 3{
+            // still under implementation
+        }
+        
+        else{
+            let crowdsource_entry = storyboard?.instantiateViewController(identifier: "crowdsource_vc") as! CrowdsourceViewController
+
+            crowdsource_entry.modalPresentationStyle = .fullScreen
+            crowdsource_entry.start = { [weak self] status in DispatchQueue.main.async {
+                self?.start = status!
+            }
+            }
+            
+            crowdsource_entry.type = type
+            
+            present(crowdsource_entry, animated: true)
+            self.start = true
+        }
+
+    }
 
     
 }

@@ -73,7 +73,7 @@
                                 <rect key="frame" x="20" y="211" width="374" height="475"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-XM-UQA">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="classification_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-XM-UQA">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="475"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -104,10 +104,10 @@
                                     <outletCollection property="gestureRecognizers" destination="Emn-wG-poX" appends="YES" id="JhG-PK-2uY"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this image contain sky?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baf-cc-VKt">
-                                <rect key="frame" x="69" y="134" width="276" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this image contain sky?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baf-cc-VKt">
+                                <rect key="frame" x="20" y="134" width="374" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -148,7 +148,9 @@
                     </view>
                     <connections>
                         <outlet property="card" destination="5Yb-SR-A2k" id="MjI-a3-by0"/>
+                        <outlet property="image" destination="Sh7-XM-UQA" id="gSI-Ki-Pci"/>
                         <outlet property="no_label" destination="9Su-Z0-9Ff" id="HCz-da-8ad"/>
+                        <outlet property="question" destination="Baf-cc-VKt" id="GhI-oJ-jrM"/>
                         <outlet property="skip_label" destination="Rht-UG-B4H" id="NBM-JJ-s4v"/>
                         <outlet property="yes_label" destination="2wP-8U-O08" id="km2-ch-6MP"/>
                     </connections>
@@ -411,9 +413,9 @@
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="classification_01.png" width="279" height="374"/>
         <image name="logo.png" width="940" height="445"/>
-        <image name="square" catalog="system" width="128" height="114"/>
-        <image name="test2.png" width="279" height="374"/>
+        <image name="square" catalog="system" width="32" height="32"/>
         <image name="wallpaper.jpg" width="1892" height="4096"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
