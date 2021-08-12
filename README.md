@@ -15,9 +15,9 @@ Crowdsource pops up with a “do you want to continue” prompt after users have
 **Customer Loyalty:** 
 Once a user of Crowdsource becomes wearied of labeling, there is no chance to have them back. Continually labeling without any stimulations is often regard as unadorned. Furthermore, there is no “quit” bottom for users to stop labeling when they are tired of it. Users often face a set of questions and only get that “do you want to continue” prompt when they finished a certain number of questions. However, customer’s patience is always a key to loyalty when it comes to applications.
 
-###Solutions (Refer to Appendix for Full Structure Notes and Demonstration)
+### Solutions (Refer to Appendix for Full Structure Notes and Demonstration)
 
-**Open Data Source Platform: **
+**Open Data Source Platform:**
 Since Crowdsource is designed to enhance the performance of google products by making users perfect its dataset, we will suggest creating an open data source platform so that when a user reaches some level, they will be able to have access to some limited amount of data. It is reasonable when Google asks customers to label data, and give them some datasets as a return. In addition, some users come across Crowdsource to learn how the dataset works along with a machine learning model, and we believe it can be a reliable incentive to attract new users and encourage current users to make more contributions. 
 
 **Swipe Right:** 
@@ -26,7 +26,7 @@ Take the image verification problem as an example, the image is displayed in the
 **Crowdsource Lock Screen:** 
 As mentioned in the previous sector, continuous labeling can lead to customer fatigue. We suggest adding functionality so that users can set crowdsource as their lock screen. Users can decide which type of problems to be set as the lock screen, and the question will be displayed before the password screen. It takes merely a few seconds to unlock your smartphone and answer a question with a single swipe. Modern people unlock their phones about 80 times a day on average. It is difficult to ask users to label 80 questions a day, but it will be a lot easier for users to solve one question at a time, and 80 times a day. Besides, move “setting” to the home page so that it is more user-friendly.
 
-###Analysis & Expected Performance
+### Analysis & Expected Performance
 **Statistics**
 According to Statista Research Department, the average number of unlocks per day among smartphones for Gen-Z users in the United States as of August 2018 is 79 times. Referring to Internet Trends, smartphone owners unlock their phones 150 times on average per day. Also, some studies elucidate that Americans check their phone every 12 minutes, and 10% of them check their phone once every 4 minutes. Besides, Elite Content Marketer mentioned that most people spend roughly 1 minute 15 seconds on their phone once they pick it up. 
 
