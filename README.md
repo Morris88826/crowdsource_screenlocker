@@ -34,5 +34,7 @@ According to Statista Research Department, the average number of unlocks per day
 Statistics have shown that most smartphone users have the following habits:
 1. Unlock their phones a lot of times a day.
 2. Spending no more than 3 minutes at a time when they unlock their screen.
+
 There are many interesting gaming applications for smartphones that appeal to the customers, and that there is no way that Crowdsource can compete. Instead of thinking of a way to make users stick to the app for 20 minutes to solve dozens of works, following users’ habits can lead to better success. 
+
 While open data source platforms can create incentives to attract AI researchers or students in the related field, swiping function can optimize the user experience and increase efficiency so that users will be able to conduct more questions in the same amount of time. In addition, moving the setting bottom to the home page lets users set up the preference easier. Last but not least, encouraging users to set crowdsource as lock screen can dramatically increase the number of questions labeled a day while users may not even notice it.
